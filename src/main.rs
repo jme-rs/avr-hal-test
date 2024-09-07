@@ -18,10 +18,10 @@ fn main() -> ! {
      * examples available.
      */
 
-    let mut led = pins.d12.into_output();
+    let mut led = pins.d13.into_output();
 
     loop {
-        arduino_hal::delay_ms(1000);
+        arduino_hal::delay_ms(10000);
         led.toggle();
     }
 }
